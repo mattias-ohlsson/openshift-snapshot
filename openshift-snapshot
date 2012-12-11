@@ -1,6 +1,15 @@
 #!/bin/bash
-# openshift-snapshot
+# openshift-snapshot 0.1
 #
 # Usage: openshift-snapshot OPENSHIFT-SSH-URL
 #
 # openshift-snapshot home page: <http://github.com/mattias-ohlsson/openshift-snapshot/>.
+
+# Get the ssh url 
+sshurl=$1
+
+# Get the hostname
+appurl=$(echo $sshurl | sed 's|.*@||')
+
+# Create the snapshot
+ssh $sshurl 'snapshot' > $appurl-$(date --iso-8601).tar.gz
