@@ -1,0 +1,6 @@
+#!/bin/bash
+# openshift-snapshot
+#
+# Usage: openshift-snapshot OPENSHIFT-SSH-URL
+#
+# openshift-snapshot home page: <http://github.com/mattias-ohlsson/openshift-snapshot/>.
