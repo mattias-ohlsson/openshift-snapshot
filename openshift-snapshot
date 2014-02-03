@@ -11,5 +11,8 @@ sshurl=$1
 # Get the hostname
 appurl=$(echo $sshurl | sed 's|.*@||')
 
+# Echo hostname
+echo $appurl 1>&2
+
 # Create the snapshot
 ssh $sshurl 'snapshot' > $appurl-$(date --iso-8601).tar.gz
