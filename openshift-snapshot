@@ -3,6 +3,8 @@
 #
 # Usage: openshift-snapshot OPENSHIFT-SSH-URL
 #
+# Restore: rhc snapshot restore -a {appName} -f {/path/to/snapshot/appName.tar.gz}
+#
 # openshift-snapshot home page: <http://github.com/mattias-ohlsson/openshift-snapshot/>.
 
 # Get the ssh url 
